@@ -1,4 +1,4 @@
-# HealthQuest - Express.js + React Application
+# HealthQuest - MERN Application
 
 A comprehensive health and fitness tracking application built with Node.js Express backend and React frontend.
 
@@ -39,67 +39,10 @@ A comprehensive health and fitness tracking application built with Node.js Expre
 - MongoDB (local or Atlas)
 - npm or yarn
 
-### Backend Setup
-
-1. **Clone and install dependencies**
-\`\`\`bash
-git clone <repository-url>
-cd healthquest
-npm install
-\`\`\`
-
-2. **Environment Variables**
-Create a `.env` file in the root directory:
-\`\`\`env
-MONGO_URI=mongodb://localhost:27017/healthquest
-JWT_SECRET=your-super-secret-jwt-key-minimum-32-characters-long
-JWT_EXPIRE=30d
-JWT_COOKIE_EXPIRE=30
-PORT=5000
-NODE_ENV=development
-CLIENT_URL=http://localhost:3000
-\`\`\`
-
-3. **Start MongoDB**
-\`\`\`bash
-# If using local MongoDB
-mongod
-
-# Or use MongoDB Atlas connection string
-\`\`\`
-
-4. **Run the backend**
-\`\`\`bash
-npm run dev
-\`\`\`
-
-### Frontend Setup
-
-1. **Navigate to client directory**
-\`\`\`bash
-cd client
-npm install
-\`\`\`
-
-2. **Environment Variables**
-Create a `.env.local` file in the client directory:
-\`\`\`env
-VITE_API_URL=http://localhost:5000/api
-\`\`\`
-
-3. **Run the frontend**
-\`\`\`bash
-npm run dev
-\`\`\`
-
-## 🔧 Development
-
-### Available Scripts
-
 **Backend:**
 - `npm start` - Start production server
 - `npm run dev` - Start development server with nodemon
-- `npm run seed` - Seed database with sample data
+
 
 **Frontend:**
 - `npm run dev` - Start development server
@@ -156,38 +99,7 @@ healthquest/
 
 ## 🚀 Deployment
 
-### Using Heroku
 
-1. **Install Heroku CLI**
-2. **Create Heroku app**
-\`\`\`bash
-heroku create healthquest-app
-\`\`\`
-
-3. **Set environment variables**
-\`\`\`bash
-heroku config:set MONGO_URI=your-mongodb-atlas-uri
-heroku config:set JWT_SECRET=your-jwt-secret
-heroku config:set NODE_ENV=production
-\`\`\`
-
-4. **Deploy**
-\`\`\`bash
-git push heroku main
-\`\`\`
-
-### Using Railway
-
-1. **Connect GitHub repository to Railway**
-2. **Set environment variables in Railway dashboard**
-3. **Deploy automatically on push**
-
-### Using DigitalOcean App Platform
-
-1. **Create new app from GitHub**
-2. **Configure build and run commands**
-3. **Set environment variables**
-4. **Deploy**
 
 ## 🗄️ Database Schema
 
